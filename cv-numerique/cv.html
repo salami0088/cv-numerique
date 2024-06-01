@@ -1,0 +1,410 @@
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mon CV numérique</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+
+  <!-- start header -->
+  <div class="header">
+    <div class="slider">
+      <div class="container">
+        <div class="intro">
+          <h2>Developpeur Java</h2>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="navbar">
+      <div class="container">
+
+        <ul>
+          <li class="active"><a href="#">Acceuil</a></li>
+          <li><a href="#aboutme">Présentation</a></li>
+          <li><a href="#myskills">Compétences</a></li>
+          <li><a href="#education">Scolarité</a></li>
+          <li><a href="#Professionel">Professionel</a></li>
+          <li><a href="#portoflio">Portefolio</a></li>
+          <li><a href="#contact">Me contacter</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- end header -->
+
+  <!-- start about -->
+  <div class="aboutme" id="aboutme">
+    <div class="container">
+      <div class="image">
+        <img src="./images/photo_profil.png" alt="Test">
+      </div>
+      <div class="info">
+        <h2>Qui suis-je ? </h2>
+        <p>Passioné d'informatique depuis mon enfance, j'ai toujours eu le
+          gout des nouvelles technologies. </p>
+        <p>Actuellement en reprise d'étude en informatique, je suis fier de pouvoir appliquer concrètement les
+          compétences acquises en entreprise grâce à la voie de l'alternance.</p>
+        <p>
+          Cette alternance me permet aussi de developper mon savoir-être et mes compétences de travail d'équipe, de
+          communication et d'animation.
+        </p>
+        <p>Je suis quelqu'un de curieux et sociable qui aime le lien sociable et apprendre de nouvelle choses.</p>
+        <p>Si mes compétences vous intéressent, n'hésitez pas a me contacter
+          sur LinkedIn pour faire plus ample connaissance. </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    let mongoClicked = false;
+    let reactClicked = false;
+    let springClicked = false;
+    function mongoDescription() {
+
+      if (!mongoClicked) {
+        document.getElementById("mongo").style.display = "";
+        document.getElementById("mongo").innerHTML = "NoSQL est un type de base de données non relationnelle conçu pour gérer de grandes quantités de données non structurées de manière flexible.Contrairement aux bases SQL, il utilise des modèles comme les documents, les colonnes, et les paires clé - valeur, permettant une mise à l'échelle facile et des performances élevées";
+      }
+      else {
+        document.getElementById("mongo").style.display = "none";
+      }
+      mongoClicked = !mongoClicked
+    }
+    function reactDescription() {
+
+      if (!reactClicked) {
+        document.getElementById("react").style.display = "";
+        document.getElementById("react").innerHTML = "React est une bibliothèque JavaScript développée par Facebook pour créer des interfaces utilisateur dynamiques et réactives. Elle utilise un modèle de composants pour construire des interfaces modulaires et réutilisables, permettant des mises à jour efficaces et rapides grâce à son Virtual DOM. C'est ce que j'utilise actuellement sur la partie Front de mon projet d'alternance";
+      }
+      else {
+        document.getElementById("react").style.display = "none";
+      }
+      reactClicked = !reactClicked
+    }
+    function springDescription() {
+
+      if (!springClicked) {
+        document.getElementById("spring").style.display = "";
+        document.getElementById("spring").innerHTML = "Spring Boot est un framework Java qui simplifie le développement d'applications en réduisant le besoin de configuration manuelle. Il permet de créer des applications autonomes et prêtes pour la production avec un minimum de configuration, grâce à des conventions par défaut et des fonctionnalités intégrées comme un serveur web embarqué. C'est ce que j'utilise actuellement sur la partie Back de mon projet d'alternance";
+      }
+      else {
+        document.getElementById("spring").style.display = "none";
+      }
+      springClicked = !springClicked
+    }
+  </script>
+  <!-- end about -->
+
+  <!-- start my skills -->
+  <div class="myskills" id="myskills">
+    <div class="container">
+
+      <div class="skills">
+        <h2>Mes Compétences</h2>
+        <p>Durant mes 3 années d'apprentissage en BUT informatique ainsi qu'en
+          alternance, j'ai pu développer mes compétences sur une multitude de
+          domaines tel que la programmation orienté objets, l'utilisation de
+          React, SpringBoot, la compréhension et l'utilisation d'une API
+          REST, et des notions de déploiement, de test et de sécurité et de
+          qualité de code. Ces
+          compétences acquises me permettent aujourd'hui d'etre performant sur
+          la réalisations de nombreux projets informatiques.</p>
+
+      </div>
+      <div class="progress">
+
+        <div class="tech">
+          <h3>Spring</h3>
+          <div class="logo-spring">
+            <img src="images/Spring_logo.png" onclick="springDescription()" />
+          </div>
+          <p id="spring" style="display: none;">
+          </p>
+          <div>
+            <span style="width:90%;">90% &nbsp;</span>
+          </div>
+
+        </div>
+        <div class="tech">
+          <h3>React</h3>
+          <div class="logo-react">
+            <img src="images/React_logo.png" onclick="reactDescription()" />
+          </div>
+          <p id="react" style="display: none;">
+          </p>
+          <div>
+            <span style="width:90%;">90% &nbsp;</span>
+          </div>
+        </div>
+        <div class="tech">
+          <h3>NoSQL</h3>
+          <div class="logo-mongo">
+            <img src="images/Mongo_logo.png" onclick="mongoDescription()" />
+          </div>
+          <p id="mongo" style="display: none;">
+          </p>
+
+          <div>
+            <span style="width:80%;">80% &nbsp;</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <hr>
+
+  <!-- end my skills -->
+
+  <!-- start my education -->
+  <div class="education" id="education">
+    <div class="container">
+
+      <div class="main">
+        <h2>Scolarité</h2>
+        <p>J'ai suivi lors de ma scolarité une voie scientifique car les
+          sciences m'ont toujours beaucoup intéressés. Elle aident a
+          comprendre le monde qui nous entour et nous dote d'une logique
+          redoutable utile dans beaucoups de domaines. </p>
+
+      </div>
+      <div class="exp">
+        <div class="certificate">
+          <h3>BUT Informatique en alternance</h3>
+          <span><strong>IUT de Lille</strong> 2021</span>
+          <p>Cette formation à pour but de me former à devenir un développeur.
+            Elle necessite beaucoup de travail mais
+            apporte une grande rigueur et toutes les bases pour pour réussir
+            dans ce domaine. <br>
+            C'est cette rigueur qui me permet aujourd'hui de pouvoir travailler dans une équipe talentueuse au sein
+            d'une
+            entreprise respecté du domaine du developpement.
+          </p>
+
+          <span>EN COURS </span>
+          <hr>
+        </div>
+        <div class="certificate">
+          <h3>Stage d'étude</h3>
+          <span><strong>Norsys</strong> 2023</span>
+          <p>Stage de fin de seconde année réalisé au sein de l'entreprise Norsys.<br>
+            Ca stage m'a permis d'équérir des compétences en React et Next.js lors de la réalisation d'un projet interne
+            a l'entreprise. <br>
+            En plus d'etre très formateur techniquement, j'ai pu galement progresser dans ma communication et mon
+            travail d'équipe. </p>
+
+          <span>RÉALISÉ</span>
+          <hr>
+        </div>
+
+        <div class="certificate">
+          <h3>DUT GEII</h3>
+          <span><strong>IUT de Béthune</strong> 2013/2015</span>
+          <p>Cette formation m'a apporté des bases en logique de
+            programmation. De multiples projets en developpement m'ont
+            orientés vers la voie de la programmation que j'ai décidé de
+            suivre aujourd'hui.
+          </p>
+
+          <span>OBTENU</span>
+          <hr>
+        </div>
+        <div class="certificate">
+          <h3>BAC Scientifique</h3>
+          <span><strong>Lycée des Flandres</strong> 2012 </span>
+          <p>Considéré comme un des meilleur lycée public de nord, j'y ai
+            suivi le programme en sciences de l'ingénieur option sciences du
+            numérique lorsque la programmation n'était même pas encore au
+            programme générale. </p>
+
+          <span>OBTENU</span>
+
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <hr>
+
+      <div class="main" id="Professionel">
+        <h2>Experience professionnelle</h2>
+        <p>Après mon DUT GEII, J'ai travaillé dans différentes entreprises, où
+          mes compétences servaient la maintenance de machines
+          industrielles</p>
+        <hr>
+        <p>Cela m'a permis de développer mon travail d'équipe, mon savoir etre
+          en entreprise et savoir gérer mon temps de manière autonome en
+          fonction des taches demandées. </p>
+        <p>Mais surtout, j'ai à ce moment réalisé que l'informatique était
+          trop peu présente dans ce domaine. C'est a ce moment que mon projet
+          de reconversion a mûri </p>
+
+      </div>
+      <div class="exp">
+        <div class="certificate">
+          <h3>Conducteur de ligne de conditionnement</h3>
+          <span><strong>WEPA</strong> / 2020-2021</span>
+          <hr>
+
+        </div>
+        <div class="certificate">
+          <h3>Conducteur de ligne industrielle</h3>
+          <span><strong>Heineken</strong> / 2019-2020</span>
+
+          <hr>
+
+        </div>
+        <div class="certificate">
+          <h3>Conducteur de ligne d'usinage</h3>
+          <span><strong>La francaise de mécanique</strong> 2017-2019</span>
+
+          <hr>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end my education -->
+
+  <!-- start portofolio -->
+  <section class="works section" id="works">
+    <h2 class="section-title">Projets récents</h2>
+    <hr>
+
+    <div class="works__container bd-grid">
+      <div class="works__img">
+        <img src="images/projetjs.png" alt="projetjs" title="projetjs">
+
+        <div class="works__data">
+          <a href="classification/classification.html" class="works__link"><i class="bx bx-link-alt"></i></a>
+          <span class="works__title">Projet d'envergure ou le but est de
+            recréer un jeu en javascript basé sur le célèbre jeu déja existant
+            "agar.io". Ce projet devait etre jouable en ligne contre d'autres
+            joueurs. <br\> </span>
+          <a class="knowmore" href="en_savoir_plus.html" style="padding: 10px;">en savoir plus</a>
+        </div>
+      </div>
+      <div class="works__img">
+        <img src="images/rested.png" alt="classification" title="classification">
+
+        <div class="works__data">
+          <a href="classification/classification.html" class="works__link"><i class="bx bx-link-alt"></i></a>
+          <span class="works__title">Ce projet avait pour but de nous
+            apprendre a créer une API REST. pour se faire, le thème était de
+            créer une api de pizza ou nous pouvions commander des pizzas en
+            ligne, et l'api nous renvoyait la commande et son prix. Elle a
+            été développé en Java, JEE, et avec PostgreSQL </span>
+        </div>
+      </div>
+    </div>
+
+    <section class="works section" id="works">
+      <h2 class="section-title">Projets informatique</h2>
+      <hr>
+
+      <div class="works__container bd-grid">
+        <div class="works__img">
+          <img src="images/classification.jpg" alt="classification" title="classification">
+
+          <div class="works__data">
+            <a href="classification/classification.html" class="works__link"><i class="bx bx-link-alt"></i></a>
+            <span class="works__title">L'objectif de ce projet était de
+              réaliser une application java capable d'afficher et de
+              classifier des données. Sur cette application il est possible
+              de choisir un jeu de données parmis ceux existant, de choisir
+              les axes du graphique mais également d'ajouter un
+              point.</span>
+          </div>
+        </div>
+
+        <div class="works__img">
+          <img src="images/knowledgequest.png" alt="ludopédagogique" title="ludopédagogique">
+
+          <div class="works__data">
+            <a href="jeu_ludo/jeu_ludo.html" class="works__link"><i class="bx bx-link-alt"></i></a>
+            <span class="works__title">Le but de ce projet était de créer un
+              jeu ludo-pédagogique en ijava (une version simplifié du java).
+
+              L'idée ici était de faire apprendre des choses à des enfants
+              tout en rendant l'activité ludique
+              Ceci est donc un Zelda-Like, dans lequel nous nous retrouvons
+              dans un donjon et pour s'échapper il faut répondre à des
+              questions de cultures générales.</span>
+          </div>
+        </div>
+
+        <div class="works__img">
+          <img src="./images/escapegame.png" alt="Jeu vidéo" title="Jeu vidéo">
+
+          <div class="works__data">
+            <a href="jeu_textuel/index.html" class="works__link"><i class="bx bx-link-alt"></i></a>
+            <span class="works__title">Ce projet consistait a réaliser un
+              "escape game" en utilisant des fonctionnalitées vues en cours.
+              le joueur devait utiliser des commandes du shell ainsi que
+              convertir des données de differents type afin de sorir de ce
+              "piège". le tout a été réalisé sur une VM dédié. </span>
+          </div>
+        </div>
+
+        <div class="works__img">
+          <img src="images/ratiopoly.png" alt="ratio" title="ratiopoly">
+
+          <div class="works__data">
+            <a href="jeu_ludo/jeu_ludo.html" class="works__link"><i class="bx bx-link-alt"></i></a>
+            <span class="works__title">Le but de ce projet était de créer un
+              jeu ludo-pédagogique en ijava (une version simplifié du java).
+
+              Par groupe de 4, sans se connaitre, nous devions appliquer la
+              méthodologie Agile afin de réaliser un projet en moins d'une
+              semaine.
+
+              Nous avons donc décider de créer une version alternative du
+              monopoly jouable en multijoueur sur un terminal de
+              commande..</span>
+          </div>
+        </div>
+
+    </section>
+
+    <!-- end portofolio -->
+
+    <!-- contact me -->
+
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="info">
+          <h2>Me contacter</h2>
+
+          <p><strong>Email:</strong> lucasvanoost@gmail.com<br>
+            <strong>Phone:</strong> 0661864497
+          </p>
+          <a href="https://www.linkedin.com/in/lucas-vanoost-60bbb023a">
+            <img src="./images/linkedin.png" alt="linkedin" title="linkedin" />
+          </a>
+          <a href="lien vers le cv">
+            <img src="./images/cv.png" alt="linkedin" title="linkedin" />
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- end contact me -->
+
+    <!-- start footer -->
+    <div class="footer">
+
+      <!-- end footer -->
+</body>
+
+</html>
